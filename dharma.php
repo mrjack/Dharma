@@ -2,9 +2,11 @@
 // conf
 set_time_limit(0);
 ini_set('display_errors', 'off');
-// datiprint("       ------------------------------------------
+// dati
+print("       ------------------------------------------
        | usage: php dharma.php server port #chan|
-       |________________________________________|\n");
+       |________________________________________|\n");
+
 $host = $argv[1];
 $port = $argv[2];
 $nick="Dharma";
@@ -153,7 +155,7 @@ else
 		$line2 = ("!".$line."");
 		    $exline = explode("!", $line2);
 			$exline = str_replace(":", "", $exline);
-			fwrite($fp, "PRIVMSG ".$chan." : ciao ".$exline[1]." :) \r\n");
+			fwrite($fp, "PRIVMSG ".$chan." :ï¿½ciao ".$exline[1]." :) \r\n");
 		break;
 		case (eregi("!killme", $line));
 		
@@ -161,7 +163,7 @@ else
 		break;
 		case (eregi("!vez", $line));
 		
-			fwrite($fp, "PRIVMSG ".$chan." : 7 2.0 ~ Coded by Mr.JacK ~ www.kingpc.it \r\n");
+			fwrite($fp, "PRIVMSG ".$chan." :ï¿½7 2.0 ~ Coded by Mr.JacK ~ www.kingpc.it \r\n");
 		break;
 
 		case (eregi("!help", $line));
@@ -170,7 +172,7 @@ else
 		$exline = explode("!", $line2);
 		$exline = str_replace(":", "", $exline);
 		fwrite($fp, "PRIVMSG ".$chan." :".$exline[1].", i comandi ti sono stati inviati in pvt :) \r\n");
-		fwrite($fp, "PRIVMSG ".$exline[1]." :7 !killme {Il bot và a farsi fottere}\n");
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7 !killme {Il bot vï¿½ a farsi fottere}\n");
 		fwrite($fp, "PRIVMSG ".$exline[1]." :7!vez {versione corrente del bot}\n");
 		fwrite($fp, "PRIVMSG ".$exline[1]." :7!oop  {nick} (operator) \n");
 		fwrite($fp, "PRIVMSG ".$exline[1]." :7!dop  {nick} \r\n");
@@ -192,4 +194,3 @@ else
    }
     fclose($fp);
 }
-?>
