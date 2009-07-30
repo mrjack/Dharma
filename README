@@ -1,0 +1,30 @@
+Usage
+php dharma.php server port (default is 6667) #chan
+
+commands:
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7 !killme {Il bot và a farsi fottere}\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!vez {versione corrente del bot}\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!oop  {nick} (operator) \n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!dop  {nick} \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!vo {nick} (voice) \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!-vo  {nick} (devoice) \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!md5 {parola} \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!k {nick} (kick) \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!ban  {nick} (ban) \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!-ban  {nick} (- ban) \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!b64 {parola} (calcola il valore base64) \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!decb64 {parola} (decodifica stringhe in base64) \r\n");
+
+		fwrite($fp, "PRIVMSG ".$exline[1]." :7!bestemmia ( 15 bestemmie scelte a caso ) \r\n");
