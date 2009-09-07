@@ -19,24 +19,6 @@ $fp = fsockopen($host, $port, $erno, $errstr, 30);
 $loggo  =  fopen('log.txt',  'a'); 
 $nbest = rand(1, 15);
 
-$bestemmie = array(
-"gli apostoli teletubbies"
-,"mannaggia ai sandali di cristo"
-,"madonna apostrofata"
-,"dio condito"
-,"i santi arrosto"
-,"jacobbe salumaio"
-,"san pietro vandalo"
-,"maria curiosa"
-,"san francesco assassino"
-,"san beppe sventrato"
-,"dio vigile"
-,"gli apostoli interisti"
-,"madonna di legno"
-,"dio cacciavite sporco di sangue ebreo"
-,"san marco a fuoco"
-,"dio musso da corsa"
-);
 
 // join
 
@@ -184,7 +166,6 @@ else
 		fwrite($fp, "PRIVMSG ".$exline[1]." :7!-ban  {nick} (- ban) \r\n");
 		fwrite($fp, "PRIVMSG ".$exline[1]." :7!b64 {parola} (calcola il valore base64) \r\n");
 		fwrite($fp, "PRIVMSG ".$exline[1]." :7!decb64 {parola} (decodifica stringhe in base64) \r\n");
-		fwrite($fp, "PRIVMSG ".$exline[1]." :7!bestemmia ( 15 bestemmie scelte a caso ) \r\n");
                 break;
 
 		
