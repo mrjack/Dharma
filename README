@@ -26,5 +26,3 @@ commands:
 		fwrite($fp, "PRIVMSG ".$exline[1]." :7!b64 {parola} (calcola il valore base64) \r\n");
 
 		fwrite($fp, "PRIVMSG ".$exline[1]." :7!decb64 {parola} (decodifica stringhe in base64) \r\n");
-
-		fwrite($fp, "PRIVMSG ".$exline[1]." :7!bestemmia ( 15 bestemmie scelte a caso ) \r\n");
